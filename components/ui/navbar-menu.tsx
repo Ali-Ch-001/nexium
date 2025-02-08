@@ -12,6 +12,7 @@ const transition = {
   restSpeed: 0.001,
 };
 
+
 const NavbarMenu = () => {
   return (
     <div className="fixed top-0 left-0 w-full bg-white dark:bg-black shadow-lg z-40 py-4 px-6">
@@ -26,10 +27,10 @@ const NavbarMenu = () => {
         >
           <Link href="/">
             <Image
-              src="/Logo_B_Croped.png"
+              src="/Logo_B_Croped.PNG"
               width={180}
               height={70}
-              alt="Nexium Logo"
+              alt="Nexium"
               className="cursor-pointer"
             />
           </Link>
