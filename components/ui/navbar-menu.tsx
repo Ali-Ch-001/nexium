@@ -1,5 +1,4 @@
 "use client";
-import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
@@ -11,12 +10,6 @@ const transition = {
   stiffness: 100,
   restDelta: 0.001,
   restSpeed: 0.001,
-};
-
-// Glow effect animation
-const glowVariants = {
-  hidden: { opacity: 0, x: "-100%" },
-  visible: { opacity: 1, x: "100%", transition: { duration: 0.5 } },
 };
 
 const NavbarMenu = () => {
