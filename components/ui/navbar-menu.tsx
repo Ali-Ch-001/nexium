@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
+import { HoveredLink } from "./HoveredLink";
 
 const transition = {
   type: "spring",
@@ -12,10 +13,9 @@ const transition = {
   restSpeed: 0.001,
 };
 
-
 const NavbarMenu = () => {
   return (
-    <div className="fixed top-0 left-0 w-full bg-white dark:bg-black shadow-lg z-40 py-4 px-6">
+    <div className="fixed top-0 left-0 w-full bg-gradient-conic from-cyan-500 via-transparent to-transparent bg-opacity-50 dark:bg-opacity-50 shadow-lg z-40 py-4 px-6">
       <div className="flex justify-between items-center max-w-7xl mx-auto">
         {/* 🔹 Animated Logo */}
         <motion.div
@@ -44,19 +44,6 @@ const NavbarMenu = () => {
         </nav>
       </div>
     </div>
-  );
-};
-
-// Glow effect on hover
-export const HoveredLink = ({ children, href }: { children: React.ReactNode; href: string }) => {
-  return (
-    <Link href={href} className="relative text-lg font-medium text-neutral-800 dark:text-neutral-200 group">
-      {/* Sliding glow effect */}
-      <motion.span
-        className="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-blue-400 to-cyan-300 scale-x-0 group-hover:scale-x-100 transition-transform duration-500"
-      />
-      {children}
-    </Link>
   );
 };
 

@@ -7,7 +7,7 @@ import { HeroContent } from "../ui/Hero-Content";
 export function Hero() {
   return (
     <LampContainer className="pt-64">
-      <HeroContent /> {/* Directly render Hero Content inside Lamp */}
+      <HeroContent /> 
     </LampContainer>
 
   );
