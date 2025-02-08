@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
-import { HoveredLink } from "./HoveredLink";
+import { HoveredLink } from "../ui/HoveredLink";
 
 const transition = {
   type: "spring",
